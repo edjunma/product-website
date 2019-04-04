@@ -75,6 +75,26 @@ nav ul li:hover {
   background-color: rgba(0, 0, 0, 0.075);
 }
 
+.nav-right ul li {
+  border-right: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+nav-right ul li:nth-child(1) {
+  border-left: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+.nav-right ul li:last-child {
+  border-right: none;
+}
+
+.nav-right i {
+  margin-right: 1rem;
+}
+
+.nav-right i:first-child {
+  margin-right: 0;
+}
+
 /* Logo */
 .logo {
   width: 5rem;
@@ -85,4 +105,84 @@ nav ul li:hover {
 .logo img {
   display: block;
   width: 100%;
+}
+
+/* Main Div */
+.main {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tone-1 {
+  background-color: #f7f7f6;
+  height: 100vh;
+  flex: 1;
+}
+
+.tone-2 {
+  background-color: #f9e2ba;
+  height: 100vh;
+  flex: 1;
+  position: relative;
+}
+
+.tone-2 img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: -15rem;
+  transform: translateY(-50%);
+}
+
+/* Products */
+.product-info {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-info h1 {
+  font-size: 5rem;
+  font-family: fantasy;
+  letter-spacing: 3px;
+  margin-right: -3px;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.product-info p {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+/* Buttons */
+
+.btn {
+  display: flex;
+  padding: 2rem;
+  color: #f7f7f6;
+  font-size: 1.5rem;
+  font-weight: 900;
+  transition: all 0.5s;
+}
+
+.info-btns {
+  display: flex;
+}
+
+.discover-btn {
+  background-color: #a4a4a4;
+}
+
+.cart-btn {
+  background-color: #141110;
 }
